@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "paths": {
+      "@app/db": [
+        "libs/db/src"
+      ],
+      "@app/db/*": [
+        "libs/db/src/*"
+      ],
+      "@app/content-db": [
+        "libs/content-db/src"
+      ],
+      "@app/content-db/*": [
+        "libs/content-db/src/*"
+      ],
+      "@app/mongo-db": [
+        "libs/mongo-db/src"
+      ],
+      "@app/mongo-db/*": [
+        "libs/mongo-db/src/*"
+      ]
+    }
+  }
+}

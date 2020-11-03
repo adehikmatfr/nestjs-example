@@ -1,0 +1,57 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/secon-app/src",
+  "monorepo": true,
+  "root": "apps/secon-app",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/secon-app/tsconfig.app.json"
+  },
+  "projects": {
+    "secon-app": {
+      "type": "application",
+      "root": "apps/secon-app",
+      "entryFile": "main",
+      "sourceRoot": "apps/secon-app/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/secon-app/tsconfig.app.json"
+      }
+    },
+    "database": {
+      "type": "application",
+      "root": "apps/database",
+      "entryFile": "main",
+      "sourceRoot": "apps/database/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/database/tsconfig.app.json"
+      }
+    },
+    "db": {
+      "type": "library",
+      "root": "libs/db",
+      "entryFile": "index",
+      "sourceRoot": "libs/db/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/db/tsconfig.lib.json"
+      }
+    },
+    "content-db": {
+      "type": "library",
+      "root": "libs/content-db",
+      "entryFile": "index",
+      "sourceRoot": "libs/content-db/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/content-db/tsconfig.lib.json"
+      }
+    },
+    "mongo-db": {
+      "type": "library",
+      "root": "libs/mongo-db",
+      "entryFile": "index",
+      "sourceRoot": "libs/mongo-db/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/mongo-db/tsconfig.lib.json"
+      }
+    }
+  }
+}
