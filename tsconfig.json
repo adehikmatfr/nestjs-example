@@ -29,6 +29,12 @@
       ],
       "@app/mongo-db/*": [
         "libs/mongo-db/src/*"
+      ],
+      "@app/content-middleware": [
+        "libs/content-middleware/src"
+      ],
+      "@app/content-middleware/*": [
+        "libs/content-middleware/src/*"
       ]
     }
   }

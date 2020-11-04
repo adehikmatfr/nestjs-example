@@ -52,6 +52,15 @@
       "compilerOptions": {
         "tsConfigPath": "libs/mongo-db/tsconfig.lib.json"
       }
+    },
+    "content-middleware": {
+      "type": "library",
+      "root": "libs/content-middleware",
+      "entryFile": "index",
+      "sourceRoot": "libs/content-middleware/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/content-middleware/tsconfig.lib.json"
+      }
     }
   }
 }

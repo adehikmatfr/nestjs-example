@@ -78,7 +78,9 @@
       "@app/content-db/(.*)": "<rootDir>/libs/content-db/src/$1",
       "@app/content-db": "<rootDir>/libs/content-db/src",
       "@app/mongo-db/(.*)": "<rootDir>/libs/mongo-db/src/$1",
-      "@app/mongo-db": "<rootDir>/libs/mongo-db/src"
+      "@app/mongo-db": "<rootDir>/libs/mongo-db/src",
+      "@app/content-middleware/(.*)": "<rootDir>/libs/content-middleware/src/$1",
+      "@app/content-middleware": "<rootDir>/libs/content-middleware/src"
     }
   }
 }
